@@ -16,5 +16,10 @@ public class LoadingManager : MonoBehaviour
     public void HideLoadingScreen()
     {
         loadingScreen.SetActive(false);
+    } 
+
+    public void UpdateLoadingProgress(float progress)
+    {
+        status.text = progress.ToString();
     }
 }
